@@ -44,11 +44,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_PACKAGES += \
-    xiaomi_thyme_hwlevel_default_overlay \
-    xiaomi_thyme_hwlevel_p01_overlay \
-    xiaomi_thyme_hwlevel_p1_overlay
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml
