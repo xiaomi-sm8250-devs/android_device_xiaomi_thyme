@@ -23,6 +23,5 @@ PRODUCT_MODEL := M2102J2SC
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="thyme-user 13 RKQ1.211001.001 V816.0.4.0.TGACNXM release-keys"
-
-BUILD_FINGERPRINT := Xiaomi/thyme/thyme:13/RKQ1.211001.001/V816.0.4.0.TGACNXM:user/release-keys
+    BuildDesc="thyme-user 13 RKQ1.211001.001 V816.0.4.0.TGACNXM release-keys" \
+    BuildFingerprint=Xiaomi/thyme/thyme:13/RKQ1.211001.001/V816.0.4.0.TGACNXM:user/release-keys
