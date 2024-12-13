@@ -1,4 +1,4 @@
-# Unpinned blobs from umi-user 13 RKQ1.211001.001 V14.0.5.0.TJBMIXM release-keys
+# Unpinned blobs from thyme-user 13 RKQ1.211001.001 V816.0.4.0.TGACNXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
@@ -44,11 +44,13 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
+vendor/lib/rfsa/adsp/misound_res_headphone.bin
+vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Audio
-vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.umi.so;FIX_SONAME
+vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.thyme.so;FIX_SONAME
 vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_umi.so;FIX_SONAME
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_thyme.so;FIX_SONAME
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudioconfigstore.so
@@ -96,16 +98,13 @@ vendor/lib64/camera/com.qti.sensormodule.umi_semco_s5khmx.bin
 vendor/lib64/camera/com.qti.sensormodule.umi_sunny_gc02m1_depth.bin
 vendor/lib64/camera/com.qti.sensormodule.umi_sunny_gc02m1_macro.bin
 vendor/lib64/camera/com.qti.sensormodule.umi_sunny_ov13b10.bin
-vendor/lib64/camera/com.qti.sensormodule.umi_sunny_ov16e10.bin
 vendor/lib64/camera/com.qti.sensormodule.umi_sunny_s5k3t2.bin
-vendor/lib64/camera/com.qti.sensormodule.umi_sunny_s5k5e8yx_depth.bin
-vendor/lib64/camera/com.qti.sensormodule.umi_sunny_s5k5e8yx_macro.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.umi_semco_s5khmx.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_depth.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_macro.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_ov13b10.bin
-vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k3t2.bin
+vendor/lib64/camera/com.qti.tuned.thyme_semco_s5khmx_wide.bin
+vendor/lib64/camera/com.qti.tuned.thyme_sunny_gc02m1_depth.bin
+vendor/lib64/camera/com.qti.tuned.thyme_sunny_gc02m1_macro.bin
+vendor/lib64/camera/com.qti.tuned.thyme_sunny_ov13b10_ultra.bin
+vendor/lib64/camera/com.qti.tuned.thyme_sunny_s5k3t2_front.bin
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
@@ -209,6 +208,7 @@ vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libvideoBokeh.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
+vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
@@ -301,6 +301,14 @@ vendor/etc/camera/110_BlackGold.png
 vendor/etc/camera/111_GreenOrange.png
 vendor/etc/camera/112_CyberPunk.png
 vendor/etc/camera/113_BlackIce.png
+vendor/etc/camera/121_Bleach.png
+vendor/etc/camera/122_Thriller.png
+vendor/etc/camera/123_TealOrange.png
+vendor/etc/camera/124_JapaneseStyle.png
+vendor/etc/camera/125_Latin.png
+vendor/etc/camera/126_Fantasy2.png
+vendor/etc/camera/127_Creamy.png
+vendor/etc/camera/128_Sepia.png
 vendor/etc/camera/CFR_para_HD_V03.bin
 vendor/etc/camera/CFR_para_T_2x_V03.bin
 vendor/etc/camera/CFR_para_UW_V01.bin
@@ -350,6 +358,7 @@ vendor/etc/camera/model_front_mibokeh_video.dlc
 vendor/etc/camera/reid_float.dlc
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/seg_quantized.dlc
+vendor/etc/camera/sr_params.xml
 vendor/etc/camera/vidhance_calibration
 
 # Camera firmware
@@ -368,15 +377,16 @@ vendor/bin/batterysecret
 vendor/etc/init/init.batterysecret.rc
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc_fod.so:vendor/lib64/hw/fingerprint.fpc_fod.default.so;FIX_SONAME
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fod6.default.so;FIX_SONAME
 vendor/lib64/libgf_hal.so
+vendor/lib64/libgf_hal6.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+# HotwordEnrollment - from umi-user 13 RKQ1.211001.001 V14.0.5.0.TJBMIXM release-keys
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk|5b155ae44487e96b86117484323b5a05a2653eda
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|7ac4345e772fe62706f8f6ef9c6d6fba503ed9c1
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|a418f5697951468fb93788b6e92d2912e7ae7149
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
@@ -437,6 +447,7 @@ vendor/etc/sensors/config/sm8250_power_0.json
 vendor/etc/sensors/config/sm8250_sx933x_0.json
 vendor/etc/sensors/config/sm8250_tcs3408.json
 vendor/etc/sensors/config/sm8250_tcs3701.json
+vendor/etc/sensors/config/sm8250_tsl2540.json
 vendor/etc/sensors/config/sm8250_vl53l1_tof_0.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
@@ -473,6 +484,7 @@ vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/config/sx933x_0.json
 vendor/etc/sensors/config/tcs3408.json
 vendor/etc/sensors/config/tcs3701.json
+vendor/etc/sensors/config/tsl2540.json
 vendor/etc/sensors/config/vl53l1_tof_0.json
 vendor/etc/sensors/calibratedCheck.json
 vendor/etc/sensors/judge_calibrated.json
@@ -493,6 +505,7 @@ vendor/etc/thermal-india-per-camera.conf
 vendor/etc/thermal-india-per-normal.conf
 vendor/etc/thermal-map-india.conf
 vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
@@ -505,7 +518,10 @@ vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
 
+# Touchscreen firmware
+vendor/firmware/J2S_limit_csot.csv
+vendor/firmware/stm_fts_production_limits.csv
+
 # Vibrator firmware
 vendor/firmware/aw8697_haptic.bin
-vendor/firmware/aw8697_haptic_a.bin
 vendor/firmware/aw8697_rtp_1.bin
