@@ -17,7 +17,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_thyme
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_thyme
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/thyme.config
