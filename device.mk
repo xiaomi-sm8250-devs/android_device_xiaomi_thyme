@@ -43,9 +43,14 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_thyme)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+    ApertureOverlayDevice \
+    FrameworkResOverlayDevice \
+    LineageSDKOverlayDevice \
+    LineageSettingsOverlayDevice \
+    LineageSystemUIOverlayDevice \
+    SettingsOverlayDevice \
+    SystemUIOverlayDevice
 
 # Permissions
 PRODUCT_COPY_FILES += \
