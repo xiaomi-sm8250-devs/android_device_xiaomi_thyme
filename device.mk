@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
     DSPVolumeSynchronizer
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_thyme)
+$(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_thyme)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
